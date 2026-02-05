@@ -1,5 +1,5 @@
 #language: pt
-
+# camada de especificação
 Funcionalidade: Catálogo de cafés
     Como um usuário do site, eu quero ver o catálogo de cafés na página principal
     Para que eu possa escolher e saber mais sobre os produtos disponíveis
