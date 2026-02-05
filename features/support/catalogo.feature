@@ -10,15 +10,23 @@ Funcionalidade: Catálogo de cafés
 
     Cenario: Iniciar a compra de um café
         Dado que estou na página principal da Starbugs
-            E que desejo comprar o café "Expresso Gelado"
-            E que esse produto custa "R$ 9,99"
-            E que o custo de entrega desse item é de "R$ 10,00"
+        E que desejo comprar o seguinte produto:
+            # data table formato chave e valor
+            | name     | Expresso Gelado   |
+            | price    | R$ 9,99           |
+            | delivery |  R$ 10,00          |
+
+            # data table formato tabela
+            #|     product         |     price   |     delivery |
+            #|     Expresso Gelado |     R$ 9,99 |     R$ 10,00 |
         Quando inicio a compra desse item
         Então devo ver a página de Checkout com os detalhes do produto
         E o valor total da compra deve ser de "R$ 19,99"
 
+    @temp
     Cenario: Café indisponível
         Dado que estou na página principal da Starbugs
-            E que desejo comprar o café "Expresso Cremoso"
+            E que desejo comprar o seguinte produto:
+            | name | Expresso Cremoso |
         Quando inicio a compra desse item
         Então devo ver um popup informando que o produto está indisponível
