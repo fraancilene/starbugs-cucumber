@@ -13,9 +13,8 @@ aplicado em um **site criado pelo professor para fins educacionais**.
 * Selenium WebDriver
 
 ▶️ Como executar o projeto
-1. Clonar o repositório e instalar as dependências com:
+1. Clonar o repositório e instalar as dependências com: <br/>
 `bundle install`
 
-2. Executar os testes
-
+2. Executar os testes de regressão <br/>
 `bundle exec cucumber`
