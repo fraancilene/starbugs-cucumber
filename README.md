@@ -18,3 +18,5 @@ aplicado em um **site criado pelo professor para fins educacionais**.
 
 2. Executar os testes de regressão <br/>
 `bundle exec cucumber`
+
+[starbugs](https://starbugs.vercel.app/)
