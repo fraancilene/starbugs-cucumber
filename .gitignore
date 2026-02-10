@@ -4,5 +4,6 @@ vendor/bundle/
 log/
 tmp/
 *.log
+/logs
 .env
 .DS_Store
