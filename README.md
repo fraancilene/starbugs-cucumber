@@ -12,6 +12,13 @@ aplicado em um **site criado pelo professor para fins educacionais**.
 * Cucumber
 * Selenium WebDriver
 
+🎯 Objetivos do Curso
+* Entender os conceitos de BDD (Behavior-Driven Development)
+* Escrever cenários em Gherkin (Given, When, Then)
+* Automatizar testes com Ruby e Cucumber
+* Aplicar boas práticas de testes automatizados
+* Validar regras de negócio de forma colaborativa
+
 ▶️ Como executar o projeto
 1. Clonar o repositório e instalar as dependências com: <br/>
 `bundle install`
@@ -19,4 +26,6 @@ aplicado em um **site criado pelo professor para fins educacionais**.
 2. Executar os testes de regressão <br/>
 `bundle exec cucumber`
 
+Observações: <br/>
+O site testado foi desenvolvido pelo professor exclusivamente para estudos.
 **site:** [starbugs](https://starbugs-qa.vercel.app/)
