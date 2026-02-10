@@ -4,6 +4,7 @@ vendor/bundle/
 log/
 tmp/
 *.log
-/logs
+logs/*
+logs/screenshot
 .env
 .DS_Store
