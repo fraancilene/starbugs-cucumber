@@ -27,5 +27,5 @@ aplicado em um **site criado pelo professor para fins educacionais**.
 `bundle exec cucumber`
 
 Observações: <br/>
-O site testado foi desenvolvido pelo professor exclusivamente para estudos.
+O site testado foi desenvolvido pelo professor exclusivamente para estudos. <br/>
 **site:** [starbugs](https://starbugs-qa.vercel.app/)
