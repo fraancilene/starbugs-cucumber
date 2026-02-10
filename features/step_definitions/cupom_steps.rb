@@ -13,7 +13,7 @@ Então('o valor final da compra deve ser atualizado para {string}') do |final_pr
   @checkout.assert_total_price(final_price)
 end
 
-Então('devo ver a notificação {string}') do |notification|
+Então('devo ver a notificação: {string}') do |notification|
   @checkout.assert_notice(notification)
 end
 

@@ -29,13 +29,13 @@ Funcionalidade: Uso de cupons no checkout
     #E o valor final da compra deve ser atualizado para R$ 25,99
 
 
-  Cenário: Cupom Expirado
-  Ao tentar usar um cupom expirado, o usuário deve receber uma notificação informando que o cupom está expirado.
-  Nenhum desconto deve ser aplicado e o valor total da compra deve permanecer inalterado.
-
-    Quando aplico o seguinte cupom: "PROMO20"
-    Então devo ver a notificação "Cupom expirado!"
-    E o valor final da compra deve permanecer o mesmo
+  #Cenário: Cupom Expirado
+  #Ao tentar usar um cupom expirado, o usuário deve receber uma notificação informando que o cupom está expirado.
+  #Nenhum desconto deve ser aplicado e o valor total da compra deve permanecer inalterado.
+#
+  #  Quando aplico o seguinte cupom: "PROMO20"
+  #  Então devo ver a notificação "Cupom expirado!"
+  #  E o valor final da compra deve permanecer o mesmo
 
 
     # Steps para desenvolvimento orientado por comportamento"
@@ -48,13 +48,13 @@ Funcionalidade: Uso de cupons no checkout
     #Então devo ver a seguinte notificação "Cupom expirado!"
     #E o valor final deve permanecer o mesmo
 
-  Cenário: Cupom inválido
-  Ao tentar usar um cupom inválido, o usuário deve receber uma notificação informando que o cupom é inválido.
-  Nenhum desconto deve ser aplicado e o valor total da compra deve permanecer inalterado.
-
-    Quando aplico o seguinte cupom: "PROMO100"
-    Então devo ver a notificação "Cupom inválido!"
-    E o valor final da compra deve permanecer o mesmo
+  #Cenário: Cupom inválido
+  #Ao tentar usar um cupom inválido, o usuário deve receber uma notificação informando que o cupom é inválido.
+  #Nenhum desconto deve ser aplicado e o valor total da compra deve permanecer inalterado.
+#
+  #  Quando aplico o seguinte cupom: "PROMO100"
+  #  Então devo ver a notificação "Cupom inválido!"
+  #  E o valor final da compra deve permanecer o mesmo
 
     # Steps para desenvolvimento orientado por comportamento"
     #Dado que estou na página de checkout
@@ -65,3 +65,22 @@ Funcionalidade: Uso de cupons no checkout
     #Quando aplico esse cupom de desconto
     #Então devo ver a seguinte notificação "Cupom inválido!"
     #E o valor final deve permanecer o mesmo
+
+  # cenário outline - bom para reuso nos testes
+  Esquema do Cenario: Tentativa de aplicar o desconto
+    Quando aplico o seguinte cupom: "<cupom>"
+    Então devo ver a notificação: "<saida>"
+    E o valor final da compra deve permanecer o mesmo
+
+    Exemplos:
+    | cupom     | saida          |
+    | PROMO20   | Cupom expirado!|
+    | PROMO 100 | Cupom inválido!|
+
+
+
+
+
+
+
+
