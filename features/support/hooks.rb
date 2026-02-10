@@ -6,4 +6,5 @@ Before do
   @home = HomePage.new
   @checkout = CheckoutPage.new
   @popup = Popup.new
+  @order = OrderPage.new
 end
